@@ -1,10 +1,10 @@
-Vue.component('composant1', {
+Vue.component('component1', {
   template: `
     <div>composant 1</div>
   `
 });
 
-Vue.component('composant2', {
+Vue.component('component2', {
   template: `
     <div>composant 2</div>
   `
@@ -13,7 +13,7 @@ Vue.component('composant2', {
 new Vue({
   el: '#app',
   template: `<div>
-    <composant1></composant1>
-    <composant2></composant2>
+    <component1></component1>
+    <component2></component2>
   </div>`
 });
