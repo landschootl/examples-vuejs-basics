@@ -1,15 +1,5 @@
-<template>
-  <div>{{title}}</div>
-</template>
-
-<script>
-export default {
-  name: 'CycleLife',
-  data() {
-    return {
-      title: 'Component life cycle'
-    }
-  },
+new Vue({
+  el:'#app',
   // cycle life
   beforeCreate() {
     console.log('beforeCreate: appelée avant l\'initialisation de la réactivité');
@@ -36,10 +26,4 @@ export default {
   destroyed() {
     console.log('destroyed: méthode appelée après que notre élément soit détruit.');
   }
-}
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
+});
